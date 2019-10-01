@@ -1,34 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang= "es">
+
 <head>
-	<meta charset="utf-8">
-	<title>ESCOMpartiendo</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ <meta charset="utf-8">
+ <title>ESCOMpartiendo</title>
+ <meta name="viewport" content="widt=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
+
 <body>
-	<header>
-		<h1>ESCOM<span style="color: red;">partiendo</span></h1>
+ 
+     <header>
 
-		<nav class="navbar navbar-inverse">
-  			<div class="container-fluid">
-    			<div class="navbar-header">
-      				<a class="navbar-brand" href="#">ESCOMpartiendo</a>
-    			</div>
-	    		<ul class="nav navbar-nav">
-	      			<li class="active"><a href="#">INICIO</a></li>
-	      			<li><a href="#">Iniciar sesión</a></li>
-	      			<li><a href="#">Registrarse</a></li>
-	      			
-	    		</ul>
-  			</div>
-		</nav>
+      <!-- Aca se agrega un nav para poder crear el menu de navegacion de la pagina -->
 
-		
-	</header>
-	
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation"> <!-- el inverse es para que cambien los colores y el static top es para que el menu se mantenga en la parte de arriba de la pagina -->
+
+         <div class="container">
+          <div class="navbar-header">
+          <!-- Esto es para hacer el boton que se muestra cuando el dispositivo es mediano-->
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion" aria-expended="false" aria-controls="navbar">
+            <span class="sr-only">Ocultar</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           </button>
+           <a href="#" class="navbar-brand">ESCOMpartiendo</a> <!-- Este es el titulo que va en el menu-->
+          </div>
+
+          <!-- Aqui se iniciara el menu-->
+
+            <div class="collapse navbar-collapse" id="navegacion"> <!-- El id que se agrega aqui debe de llevar el mismo nombre que se ingreso en el data-target que va en el boton que se muestra en dispositivos medianos-->
+
+               <ul class="nav navbar-nav">
+                
+                <li class="active"><a href="#">Inicio</a></li>
+
+                  <li><a href="#">Nosotros</a></li>
+
+                  <li class="dropdown">
+
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expended="false">
+                   Nuestros Servicios 
+                      <span class="caret"></span>
+                   </a>
+
+                   <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">HOLA</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">CLUBES</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">BIBLIOTECA</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">CURSOS</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">MATERIAL DIDACTICO</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">HORARIOS DE ASESORIAS</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">PUBLICACIONES GENERALES</a></li>
+                   </ul>
+
+                </li>
+
+                <li><a href="#">Contacto</a></li>
+             </ul> 
+
+             <form action="" class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <button type="submit" class="btn btn-primary">
+                 <span class="glyphicon glyphicon-search"></span>
+                </button>
+
+             </form>
+
+            </div>
+           </div>
+
+        </nav>
+     </header>
+
+     <section class="jumbotron" style="background: #0090FF;">
+      <div class="container">
+       <h1 style="color: #000"><span style="color: #ffffff">ESCOM</span>partiendo</h1>
+      </div>
+     </section>
+      <!--inicia contenido de la pagina-->
+     <section class="jumbotron" style="background: #FFFFFF;">
+      <div class="container">
+       <p>En esta plataforma se tiene la finalidad de poder visualizar todas las publicaciones de los clubes, asi como tambien los anuncios generales de la institución.<br>
+       También se puede visualizar y descargar material didactico de cada profesor, incluyendo el acceso a los cursos de cada materia. <br>
+       Se puede acceder a los planes de estudio de cada materia del mapa curricular. Esperando asi, que el alumno tenga la facilidad de poder completar su carrera de manera mas eficaz.
+       </p>
+      </div>
+     </section>
+
+     <section class="main container">
+      <div class="form">
+        
+      </div>
+     </section>
+
+     <footer style="background: #000">
+       <div class="container">
+         <h3 style="color: #ffffff">ESCOMpartiendo</h3>
+       </div>
+
+     </footer>
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 
 </body>
+
 </html>
